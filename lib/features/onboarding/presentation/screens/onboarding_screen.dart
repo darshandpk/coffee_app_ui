@@ -3,7 +3,7 @@ import 'package:coffee_ui/core/constants/app_assets.dart';
 import 'package:coffee_ui/core/routes/app_routes.dart';
 import 'package:coffee_ui/features/onboarding/data/models/onboarding_model.dart';
 import 'package:coffee_ui/features/onboarding/presentation/widgets/page_view_widget.dart';
-import 'package:coffee_ui/shared/app_widgets/app_button.dart';
+import 'package:coffee_ui/shared/app_widgets/buttons/app_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';

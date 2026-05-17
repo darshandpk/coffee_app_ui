@@ -5,6 +5,8 @@ class AppColors {
 
   // ───────────────── BACKGROUND COLORS ─────────────────
 
+  static const Color kTransparent = Colors.transparent;
+
   /// Main app background
   static const Color kBackground = Color(0xFFF8F5F1);
 
