@@ -1,11 +1,13 @@
 import 'package:coffee_ui/core/routes/app_routes.dart';
 import 'package:coffee_ui/features/cart/presentation/screens/cart_screen.dart';
 import 'package:coffee_ui/features/details/presentation/screens/prod_details_screen.dart';
+import 'package:coffee_ui/features/home/data/models/coffee_model.dart';
 import 'package:coffee_ui/features/home/presentation/screens/home_screen.dart';
 import 'package:coffee_ui/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:coffee_ui/features/profile/presentation/screens/profile_screen.dart';
 import 'package:coffee_ui/features/splash/presentation/screens/splash_screen.dart';
 import 'package:coffee_ui/main_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -40,8 +42,20 @@ class AppRouter {
       ),
       GoRoute(
         path: AppRoutes.prodDetails,
-        name: AppRoutes.prodDetails,
-        builder: (context, state) => ProdDetailsScreen(),
+        pageBuilder: (context, state) {
+          final coffee = state.extra as CoffeeModel;
+
+          return CustomTransitionPage(
+            key: state.pageKey,
+
+            child: ProdDetailsScreen(coffeeModel: coffee),
+
+            transitionsBuilder:
+                (context, animation, secondaryAnimation, child) {
+                  return FadeTransition(opacity: animation, child: child);
+                },
+          );
+        },
       ),
       GoRoute(
         path: AppRoutes.profile,

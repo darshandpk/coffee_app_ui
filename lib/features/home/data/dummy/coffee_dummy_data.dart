@@ -1,11 +1,12 @@
 import 'package:coffee_ui/core/constants/app_assets.dart';
+
 import '../models/coffee_model.dart';
 
 class CoffeeDummyData {
   static List<CoffeeModel> coffees = [
-
     /// Cappuccino
     CoffeeModel(
+      id: 1,
       image: AppAssets.coffee1,
       title: 'Cappuccino',
       subtitle: 'With Chocolate',
@@ -16,6 +17,7 @@ class CoffeeDummyData {
 
     /// Espresso
     CoffeeModel(
+      id: 2,
       image: AppAssets.coffee2,
       title: 'Espresso',
       subtitle: 'Strong & Bold',
@@ -26,6 +28,7 @@ class CoffeeDummyData {
 
     /// Americano
     CoffeeModel(
+      id: 3,
       image: AppAssets.coffee3,
       title: 'Americano',
       subtitle: 'Classic Black',
@@ -36,6 +39,7 @@ class CoffeeDummyData {
 
     /// Latte
     CoffeeModel(
+      id: 4,
       image: AppAssets.coffee4,
       title: 'Latte',
       subtitle: 'Smooth Milk',
@@ -46,6 +50,7 @@ class CoffeeDummyData {
 
     /// Cold Coffee
     CoffeeModel(
+      id: 5,
       image: AppAssets.coffee5,
       title: 'Cold Brew',
       subtitle: 'Iced Fresh',
@@ -56,6 +61,7 @@ class CoffeeDummyData {
 
     /// Latte
     CoffeeModel(
+      id: 6,
       image: AppAssets.coffee6,
       title: 'Iced Latte',
       subtitle: 'Creamy Cold',
@@ -66,6 +72,7 @@ class CoffeeDummyData {
 
     /// Mocha
     CoffeeModel(
+      id: 7,
       image: AppAssets.coffee7,
       title: 'Mocha Frappe',
       subtitle: 'Chocolate Blend',
@@ -76,6 +83,7 @@ class CoffeeDummyData {
 
     /// Frappé
     CoffeeModel(
+      id: 8,
       image: AppAssets.coffee8,
       title: 'Vanilla Cold Coffee',
       subtitle: 'Sweet & Cool',
@@ -86,6 +94,7 @@ class CoffeeDummyData {
 
     /// Jacobs Coffee
     CoffeeModel(
+      id: 9,
       image: AppAssets.coffee9,
       title: 'Jacobs Latte',
       subtitle: 'Premium Roast',
@@ -96,6 +105,7 @@ class CoffeeDummyData {
 
     /// Espresso
     CoffeeModel(
+      id: 10,
       image: AppAssets.coffee10,
       title: 'Jacobs Espresso',
       subtitle: 'Strong Taste',
@@ -106,6 +116,7 @@ class CoffeeDummyData {
 
     /// Premium Blend
     CoffeeModel(
+      id: 11,
       image: AppAssets.coffee11,
       title: 'Caramel Jacobs',
       subtitle: 'Sweet Premium',
@@ -116,6 +127,7 @@ class CoffeeDummyData {
 
     /// Macchiato
     CoffeeModel(
+      id: 12,
       image: AppAssets.coffee12,
       title: 'Hazelnut Jacobs',
       subtitle: 'Nutty Aroma',

@@ -10,11 +10,14 @@ class CoffeeListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      physics: BouncingScrollPhysics(),
       scrollDirection: Axis.horizontal,
+      physics: const BouncingScrollPhysics(),
       child: Row(
         children: List.generate(coffeeModel.length, (index) {
-          return CoffeeSimpleCard(coffeeModel: coffeeModel[index]);
+          return CoffeeSimpleCard(
+            coffeeModel: coffeeModel[index],
+            heroTag: 'list_${coffeeModel[index].id}',
+          );
         }),
       ),
     );
